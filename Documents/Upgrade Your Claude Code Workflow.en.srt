@@ -1,0 +1,1292 @@
+1
+00:00:00,080 --> 00:00:03,679
+AI coding keeps getting better and
+
+2
+00:00:01,760 --> 00:00:06,080
+better. Cursor came first and it was
+
+3
+00:00:03,679 --> 00:00:08,480
+basically VS Code with AI features added
+
+4
+00:00:06,080 --> 00:00:10,000
+on top. Then we got AI in our terminals.
+
+5
+00:00:08,480 --> 00:00:11,840
+Now Claude Code is one of the best
+
+6
+00:00:10,000 --> 00:00:13,759
+coding agents out there. But what if I
+
+7
+00:00:11,840 --> 00:00:15,519
+told you that today I found something
+
+8
+00:00:13,759 --> 00:00:17,600
+truly amazing? Something that makes
+
+9
+00:00:15,519 --> 00:00:19,279
+Claude Code work all by itself. It
+
+10
+00:00:17,600 --> 00:00:21,119
+creates a whole team. And this team
+
+11
+00:00:19,279 --> 00:00:22,880
+doesn't work one thing at a time. They
+
+12
+00:00:21,119 --> 00:00:24,640
+all work together at the same time. The
+
+13
+00:00:22,880 --> 00:00:26,799
+best part, you don't need to monitor
+
+14
+00:00:24,640 --> 00:00:29,119
+anything because it's a truly autonomous
+
+15
+00:00:26,800 --> 00:00:30,800
+system that just works. Before I show
+
+16
+00:00:29,119 --> 00:00:32,640
+you the workflow, there are two key
+
+17
+00:00:30,800 --> 00:00:34,559
+concepts you need to understand since
+
+18
+00:00:32,640 --> 00:00:36,399
+many people won't be familiar with them.
+
+19
+00:00:34,559 --> 00:00:38,480
+By understanding these, you'll see why
+
+20
+00:00:36,399 --> 00:00:40,719
+this workflow is so amazing and how it
+
+21
+00:00:38,480 --> 00:00:42,640
+defines the way AI agents may work in
+
+22
+00:00:40,719 --> 00:00:44,879
+the future. The first is T-Mox, which
+
+23
+00:00:42,640 --> 00:00:46,800
+stands for terminal multiplexer. It's a
+
+24
+00:00:44,879 --> 00:00:49,039
+program that lets you create multiple
+
+25
+00:00:46,800 --> 00:00:50,959
+terminal sessions inside one window.
+
+26
+00:00:49,039 --> 00:00:52,719
+What this means is that when an agent
+
+27
+00:00:50,960 --> 00:00:54,640
+like Claude Code is running in a
+
+28
+00:00:52,719 --> 00:00:56,480
+terminal, it can spawn additional
+
+29
+00:00:54,640 --> 00:00:58,640
+terminals within the same session and
+
+30
+00:00:56,480 --> 00:01:01,038
+assign tasks to them. One instance of
+
+31
+00:00:58,640 --> 00:01:03,440
+Cloud Code can effectively control and
+
+32
+00:01:01,039 --> 00:01:05,680
+manage as many Claude Code instances as
+
+33
+00:01:03,440 --> 00:01:07,920
+it wants. The best part is that T-Max
+
+34
+00:01:05,680 --> 00:01:09,840
+sessions persist in memory, so when you
+
+35
+00:01:07,920 --> 00:01:12,080
+return to them, you're exactly where you
+
+36
+00:01:09,840 --> 00:01:14,159
+left off. This is incredibly useful for
+
+37
+00:01:12,080 --> 00:01:16,240
+maintaining context. The second concept
+
+38
+00:01:14,159 --> 00:01:18,560
+is terminal scheduling. This allows you
+
+39
+00:01:16,240 --> 00:01:20,560
+to assign tasks to agents with specific
+
+40
+00:01:18,560 --> 00:01:22,720
+timing parameters. You can instruct them
+
+41
+00:01:20,560 --> 00:01:24,799
+to perform certain actions at designated
+
+42
+00:01:22,720 --> 00:01:26,640
+times, then automatically proceed to the
+
+43
+00:01:24,799 --> 00:01:28,799
+next task. There's no need for constant
+
+44
+00:01:26,640 --> 00:01:30,400
+monitoring. The agents simply follow the
+
+45
+00:01:28,799 --> 00:01:32,079
+schedule you've created, completing
+
+46
+00:01:30,400 --> 00:01:34,000
+everything automatically. That's the
+
+47
+00:01:32,079 --> 00:01:36,240
+power of scheduling. It transforms your
+
+48
+00:01:34,000 --> 00:01:38,640
+terminal into a self-running system.
+
+49
+00:01:36,240 --> 00:01:40,798
+Over on the AI Labs Discord community,
+
+50
+00:01:38,640 --> 00:01:44,240
+we're hosting our first ever hackathon
+
+51
+00:01:40,799 --> 00:01:46,000
+from July 22nd to July 28th. Submit your
+
+52
+00:01:44,240 --> 00:01:47,920
+most interesting builds and projects,
+
+53
+00:01:46,000 --> 00:01:49,920
+and the top five submissions will be
+
+54
+00:01:47,920 --> 00:01:51,759
+featured in one of our YouTube videos.
+
+55
+00:01:49,920 --> 00:01:53,439
+You can join by clicking the link in the
+
+56
+00:01:51,759 --> 00:01:55,360
+pinned comment below. And if you're
+
+57
+00:01:53,439 --> 00:01:57,279
+enjoying the content so far, make sure
+
+58
+00:01:55,360 --> 00:01:59,759
+to hit that subscribe button so you
+
+59
+00:01:57,280 --> 00:02:01,680
+don't miss what's coming next. Before we
+
+60
+00:01:59,759 --> 00:02:03,360
+start, navigate to the directory or
+
+61
+00:02:01,680 --> 00:02:05,040
+folder where you want the system to be
+
+62
+00:02:03,360 --> 00:02:06,960
+set up. Once you're there, go to the
+
+63
+00:02:05,040 --> 00:02:08,959
+GitHub repository linked in the
+
+64
+00:02:06,960 --> 00:02:11,038
+description below. This repository is
+
+65
+00:02:08,959 --> 00:02:12,800
+called T-Max Orchestrator, and you'll
+
+66
+00:02:11,038 --> 00:02:15,040
+need to copy the link from there. Go
+
+67
+00:02:12,800 --> 00:02:16,959
+back to your terminal and type git clone
+
+68
+00:02:15,040 --> 00:02:18,799
+followed by the link. This command will
+
+69
+00:02:16,959 --> 00:02:20,959
+clone the repository to your local
+
+70
+00:02:18,800 --> 00:02:23,440
+machine. After cloning, move into the
+
+71
+00:02:20,959 --> 00:02:25,520
+new directory called T-Max Orchestrator.
+
+72
+00:02:23,440 --> 00:02:27,120
+And once inside, you'll run the setup
+
+73
+00:02:25,520 --> 00:02:28,959
+commands shown here. You don't need to
+
+74
+00:02:27,120 --> 00:02:30,720
+copy these commands from the video.
+
+75
+00:02:28,959 --> 00:02:32,879
+Later, I'll show you how to get them in
+
+76
+00:02:30,720 --> 00:02:34,959
+a structured format for easy copy and
+
+77
+00:02:32,879 --> 00:02:36,720
+paste. Running the setup executes
+
+78
+00:02:34,959 --> 00:02:38,879
+scripts that enable the agentic
+
+79
+00:02:36,720 --> 00:02:40,959
+workflow. This step makes all necessary
+
+80
+00:02:38,879 --> 00:02:43,040
+files executable. Once the setup is
+
+81
+00:02:40,959 --> 00:02:44,560
+complete, you need to start a new T-mok
+
+82
+00:02:43,040 --> 00:02:46,239
+session. Since I already have one
+
+83
+00:02:44,560 --> 00:02:48,239
+running, I'll name this one my second
+
+84
+00:02:46,239 --> 00:02:49,760
+agent. This will initialize a fresh
+
+85
+00:02:48,239 --> 00:02:51,680
+session for you. Before you start
+
+86
+00:02:49,760 --> 00:02:53,679
+working with the system, you need to fix
+
+87
+00:02:51,680 --> 00:02:55,840
+two things. Since this project is still
+
+88
+00:02:53,680 --> 00:02:57,680
+in development and relatively new, not
+
+89
+00:02:55,840 --> 00:02:59,680
+everything has been finalized. There are
+
+90
+00:02:57,680 --> 00:03:01,599
+two errors in the repository that need
+
+91
+00:02:59,680 --> 00:03:04,080
+correction. After fixing these, the
+
+92
+00:03:01,599 --> 00:03:06,079
+system should run properly. Both fixes
+
+93
+00:03:04,080 --> 00:03:08,159
+I'm about to explain require editing
+
+94
+00:03:06,080 --> 00:03:09,840
+files inside the framework. This will
+
+95
+00:03:08,159 --> 00:03:11,920
+make more sense when I show you the
+
+96
+00:03:09,840 --> 00:03:13,920
+demo. These are minor changes that you
+
+97
+00:03:11,920 --> 00:03:15,760
+can easily make yourself. First, when
+
+98
+00:03:13,920 --> 00:03:18,079
+you're inside the T-Mox session, type
+
+99
+00:03:15,760 --> 00:03:19,840
+out Claude to initialize Claude code.
+
+100
+00:03:18,080 --> 00:03:21,599
+You'll then give it a specific prompt
+
+101
+00:03:19,840 --> 00:03:23,519
+that explains how the orchestrator
+
+102
+00:03:21,599 --> 00:03:25,518
+works. There are two checks to ensure
+
+103
+00:03:23,519 --> 00:03:27,519
+everything is functioning correctly. The
+
+104
+00:03:25,519 --> 00:03:29,840
+first check verifies that Claude can
+
+105
+00:03:27,519 --> 00:03:31,760
+control different windows using T-Mox.
+
+106
+00:03:29,840 --> 00:03:33,519
+The second check confirms the scheduling
+
+107
+00:03:31,760 --> 00:03:35,920
+system is working. When I run this
+
+108
+00:03:33,519 --> 00:03:37,760
+prompt, it passes successfully. However,
+
+109
+00:03:35,920 --> 00:03:39,920
+when you run it, the check will fail
+
+110
+00:03:37,760 --> 00:03:41,518
+because the author has hard-coded paths
+
+111
+00:03:39,920 --> 00:03:43,359
+with their own username in the
+
+112
+00:03:41,519 --> 00:03:45,440
+configuration files. Don't worry about
+
+113
+00:03:43,360 --> 00:03:47,680
+this failure. Claude will automatically
+
+114
+00:03:45,440 --> 00:03:49,440
+detect the issue and fix these paths to
+
+115
+00:03:47,680 --> 00:03:51,680
+work with your system. You won't need to
+
+116
+00:03:49,440 --> 00:03:53,760
+copy this prompt from the screen either.
+
+117
+00:03:51,680 --> 00:03:56,159
+Moving on to the second fix. You need to
+
+118
+00:03:53,760 --> 00:03:57,920
+ask Claude code to edit the files again.
+
+119
+00:03:56,159 --> 00:03:59,840
+This time, tell it to look through all
+
+120
+00:03:57,920 --> 00:04:01,679
+the commands and replace the claude
+
+121
+00:03:59,840 --> 00:04:03,920
+command with the claude command using
+
+122
+00:04:01,680 --> 00:04:05,840
+the dangerously skip permissions flag.
+
+123
+00:04:03,920 --> 00:04:07,839
+This change is necessary because the
+
+124
+00:04:05,840 --> 00:04:09,840
+original framework we cloned doesn't
+
+125
+00:04:07,840 --> 00:04:11,920
+include this feature. As you can see,
+
+126
+00:04:09,840 --> 00:04:14,000
+there are three terminals that one main
+
+127
+00:04:11,920 --> 00:04:16,320
+agent is controlling. This is the key
+
+128
+00:04:14,000 --> 00:04:18,560
+benefit of using the T-Mox system. It
+
+129
+00:04:16,320 --> 00:04:20,478
+allows the main agent you just set up to
+
+130
+00:04:18,560 --> 00:04:22,320
+automatically create new terminals
+
+131
+00:04:20,478 --> 00:04:24,400
+within your main terminal window. This
+
+132
+00:04:22,320 --> 00:04:26,560
+is my main terminal and it has created
+
+133
+00:04:24,400 --> 00:04:28,239
+three sub terminals inside. While I'm
+
+134
+00:04:26,560 --> 00:04:30,240
+showing you three, there are actually
+
+135
+00:04:28,240 --> 00:04:32,240
+eight terminals running here. Normally,
+
+136
+00:04:30,240 --> 00:04:33,759
+when you give Claude a command, it asks
+
+137
+00:04:32,240 --> 00:04:36,080
+for your permission. Even with
+
+138
+00:04:33,759 --> 00:04:37,919
+autoaccept edits enabled, Claude still
+
+139
+00:04:36,080 --> 00:04:39,520
+requires approval for certain commands.
+
+140
+00:04:37,919 --> 00:04:41,440
+With the dangerous skip permissions
+
+141
+00:04:39,520 --> 00:04:43,599
+flag, Claude runs all commands
+
+142
+00:04:41,440 --> 00:04:45,600
+automatically. I've used this flag many
+
+143
+00:04:43,600 --> 00:04:47,280
+times without any system issues. You
+
+144
+00:04:45,600 --> 00:04:49,120
+need this setting so all the different
+
+145
+00:04:47,280 --> 00:04:51,198
+terminals can run Claude commands
+
+146
+00:04:49,120 --> 00:04:53,199
+without requiring you to open each one
+
+147
+00:04:51,199 --> 00:04:54,960
+and approve every action. I learned this
+
+148
+00:04:53,199 --> 00:04:57,199
+the hard way. My first time using the
+
+149
+00:04:54,960 --> 00:04:59,359
+system, I started it but noticed it was
+
+150
+00:04:57,199 --> 00:05:01,199
+stuck. Even after 15 minutes with the
+
+151
+00:04:59,360 --> 00:05:03,199
+scheduling system, everything remained
+
+152
+00:05:01,199 --> 00:05:05,120
+frozen at the first phase. This happened
+
+153
+00:05:03,199 --> 00:05:07,120
+because all the terminals were waiting
+
+154
+00:05:05,120 --> 00:05:09,120
+for my approval. You need to enable this
+
+155
+00:05:07,120 --> 00:05:11,120
+flag. So the system can execute all
+
+156
+00:05:09,120 --> 00:05:13,360
+commands independently without waiting
+
+157
+00:05:11,120 --> 00:05:15,199
+for your input. You've seen the multiple
+
+158
+00:05:13,360 --> 00:05:16,880
+terminal setup, but there's another
+
+159
+00:05:15,199 --> 00:05:18,639
+crucial part that requires your
+
+160
+00:05:16,880 --> 00:05:20,639
+attention. This is where you'll spend
+
+161
+00:05:18,639 --> 00:05:22,720
+most of your time, and it's what makes
+
+162
+00:05:20,639 --> 00:05:24,720
+the entire system worthwhile. I've
+
+163
+00:05:22,720 --> 00:05:26,720
+opened the project directory and cursor
+
+164
+00:05:24,720 --> 00:05:28,800
+to visually explain the structure. You
+
+165
+00:05:26,720 --> 00:05:30,800
+can see our T-Mox orchestrator folder
+
+166
+00:05:28,800 --> 00:05:33,199
+that we cloned. Outside of that, I have
+
+167
+00:05:30,800 --> 00:05:35,600
+an app folder containing two subfolders,
+
+168
+00:05:33,199 --> 00:05:37,520
+spec and task manager. The spec folder
+
+169
+00:05:35,600 --> 00:05:39,759
+contains the documentation that the
+
+170
+00:05:37,520 --> 00:05:42,000
+T-Max Orchestrator uses as its
+
+171
+00:05:39,759 --> 00:05:43,919
+blueprint. The task manager folder is
+
+172
+00:05:42,000 --> 00:05:46,240
+where the actual app gets built. The
+
+173
+00:05:43,919 --> 00:05:48,479
+spec folder is critical. It contains the
+
+174
+00:05:46,240 --> 00:05:50,960
+main spec, integration spec, and
+
+175
+00:05:48,479 --> 00:05:52,880
+separate front-end and backend specs.
+
+176
+00:05:50,960 --> 00:05:54,960
+These files provide guidelines that tell
+
+177
+00:05:52,880 --> 00:05:57,039
+the orchestrator exactly what app to
+
+178
+00:05:54,960 --> 00:05:58,960
+build. The main spec includes timing for
+
+179
+00:05:57,039 --> 00:06:01,120
+each development phase. Everything is
+
+180
+00:05:58,960 --> 00:06:03,198
+timed and Claude Code must complete each
+
+181
+00:06:01,120 --> 00:06:05,039
+phase within its allocated time frame.
+
+182
+00:06:03,199 --> 00:06:06,960
+I've prepared a template you can use to
+
+183
+00:06:05,039 --> 00:06:08,880
+create your specs step by step. It
+
+184
+00:06:06,960 --> 00:06:10,719
+includes default requirements for a full
+
+185
+00:06:08,880 --> 00:06:12,560
+stack web app, which you can modify
+
+186
+00:06:10,720 --> 00:06:14,240
+based on your needs. If you're building
+
+187
+00:06:12,560 --> 00:06:15,840
+something different, make sure to review
+
+188
+00:06:14,240 --> 00:06:17,680
+and adjust the specifications
+
+189
+00:06:15,840 --> 00:06:19,520
+accordingly. Once your spec is ready,
+
+190
+00:06:17,680 --> 00:06:21,919
+you'll use a specific prompt to start
+
+191
+00:06:19,520 --> 00:06:24,000
+cla working on the project. After this
+
+192
+00:06:21,919 --> 00:06:25,440
+point, everything runs autonomously.
+
+193
+00:06:24,000 --> 00:06:27,440
+Here's what you need to know about the
+
+194
+00:06:25,440 --> 00:06:29,520
+prompt. You must provide the full path
+
+195
+00:06:27,440 --> 00:06:31,360
+to your spec folder starting from the
+
+196
+00:06:29,520 --> 00:06:33,919
+home directory. Don't use relative
+
+197
+00:06:31,360 --> 00:06:35,919
+paths. Next, specify what teams to
+
+198
+00:06:33,919 --> 00:06:37,758
+create. There's a front-end team and a
+
+199
+00:06:35,919 --> 00:06:39,919
+back-end team, each with a project
+
+200
+00:06:37,759 --> 00:06:41,840
+manager and developer. You can add more
+
+201
+00:06:39,919 --> 00:06:44,400
+teams using the same format. For
+
+202
+00:06:41,840 --> 00:06:46,560
+example, to add authentication, you type
+
+203
+00:06:44,400 --> 00:06:48,400
+create an O team and follow the same
+
+204
+00:06:46,560 --> 00:06:50,479
+pattern. The system builds according to
+
+205
+00:06:48,400 --> 00:06:52,799
+your spec and checks on each team every
+
+206
+00:06:50,479 --> 00:06:54,800
+15 minutes to ensure tasks are completed
+
+207
+00:06:52,800 --> 00:06:56,800
+on schedule. It also commits changes
+
+208
+00:06:54,800 --> 00:06:58,400
+regularly, creating restore points in
+
+209
+00:06:56,800 --> 00:07:00,479
+case anything goes wrong. Version
+
+210
+00:06:58,400 --> 00:07:02,400
+control is built into the workflow. Let
+
+211
+00:07:00,479 --> 00:07:04,400
+me demonstrate my setup. I've reached my
+
+212
+00:07:02,400 --> 00:07:06,239
+Claude usage limit, so I can't show live
+
+213
+00:07:04,400 --> 00:07:07,919
+coding, but I can walk through how I
+
+214
+00:07:06,240 --> 00:07:10,080
+started the workflow. After completing
+
+215
+00:07:07,919 --> 00:07:12,240
+the two fixes and creating the T-Max
+
+216
+00:07:10,080 --> 00:07:14,240
+session, initialize Claude again using
+
+217
+00:07:12,240 --> 00:07:15,919
+the dangerous permissions flag. This
+
+218
+00:07:14,240 --> 00:07:17,759
+launches Claude with the necessary
+
+219
+00:07:15,919 --> 00:07:19,440
+permissions. Then provide your prompt
+
+220
+00:07:17,759 --> 00:07:21,199
+and the system will begin building
+
+221
+00:07:19,440 --> 00:07:23,199
+everything automatically. Let me show
+
+222
+00:07:21,199 --> 00:07:25,599
+you the terminals it opens and how it
+
+223
+00:07:23,199 --> 00:07:27,440
+manages the coding process across them.
+
+224
+00:07:25,599 --> 00:07:29,599
+This is the start of the project. I
+
+225
+00:07:27,440 --> 00:07:31,599
+initialized it exactly as I showed you.
+
+226
+00:07:29,599 --> 00:07:33,520
+To be safe, I ran the check command
+
+227
+00:07:31,599 --> 00:07:35,680
+mentioned at the beginning. Since I had
+
+228
+00:07:33,520 --> 00:07:37,758
+already fixed the hard-coded paths, it
+
+229
+00:07:35,680 --> 00:07:39,840
+confirmed the setup was successful. It
+
+230
+00:07:37,759 --> 00:07:41,840
+recognized the first agent window and
+
+231
+00:07:39,840 --> 00:07:43,359
+verified the scheduling was correct. I
+
+232
+00:07:41,840 --> 00:07:45,520
+provided the full stack app
+
+233
+00:07:43,360 --> 00:07:47,280
+specification and you can see it adding
+
+234
+00:07:45,520 --> 00:07:49,280
+what I wanted to build just as I
+
+235
+00:07:47,280 --> 00:07:51,520
+demonstrated earlier. After that, it
+
+236
+00:07:49,280 --> 00:07:53,840
+proceeded automatically. I also included
+
+237
+00:07:51,520 --> 00:07:56,240
+a UI implementation reference in the
+
+238
+00:07:53,840 --> 00:07:58,638
+front-end spec. It knows to check the UI
+
+239
+00:07:56,240 --> 00:08:00,639
+reference folder. Inside I have a design
+
+240
+00:07:58,639 --> 00:08:02,960
+image to replicate and a UI
+
+241
+00:08:00,639 --> 00:08:05,599
+implementation.m MD file. This
+
+242
+00:08:02,960 --> 00:08:07,919
+implementation plan provides exact steps
+
+243
+00:08:05,599 --> 00:08:10,240
+using Shad CN components with the Shad
+
+244
+00:08:07,919 --> 00:08:12,000
+CN MCP. It's an amazing workflow that
+
+245
+00:08:10,240 --> 00:08:13,840
+I'll link in the description if you're
+
+246
+00:08:12,000 --> 00:08:15,520
+interested. The system understood my
+
+247
+00:08:13,840 --> 00:08:17,440
+project requirements. It needed to
+
+248
+00:08:15,520 --> 00:08:19,520
+deploy the front-end team, then the
+
+249
+00:08:17,440 --> 00:08:22,240
+backend team, set up their development
+
+250
+00:08:19,520 --> 00:08:24,318
+phases, and schedule 15minute checkups.
+
+251
+00:08:22,240 --> 00:08:26,240
+It completed all these tasks. You can
+
+252
+00:08:24,319 --> 00:08:28,160
+see it briefing both teams using the
+
+253
+00:08:26,240 --> 00:08:29,919
+send claude message script. It sent
+
+254
+00:08:28,160 --> 00:08:31,759
+instructions to the front-end team's
+
+255
+00:08:29,919 --> 00:08:33,838
+project manager, then provided them with
+
+256
+00:08:31,759 --> 00:08:35,919
+the project specifications from the spec
+
+257
+00:08:33,839 --> 00:08:38,000
+folder. It repeated this process for the
+
+258
+00:08:35,919 --> 00:08:40,159
+backend team, giving them their schedule
+
+259
+00:08:38,000 --> 00:08:42,320
+and updating the to-do list. It marked
+
+260
+00:08:40,159 --> 00:08:44,560
+completed tasks and moved to the next
+
+261
+00:08:42,320 --> 00:08:46,640
+phase. The system informed me that both
+
+262
+00:08:44,560 --> 00:08:48,719
+teams were actively working. It provided
+
+263
+00:08:46,640 --> 00:08:50,800
+a status update and scheduled the next
+
+264
+00:08:48,720 --> 00:08:52,800
+check detailing what each team was doing
+
+265
+00:08:50,800 --> 00:08:54,560
+and their current progress. Both teams
+
+266
+00:08:52,800 --> 00:08:57,040
+were successfully deployed and working
+
+267
+00:08:54,560 --> 00:08:59,119
+on phase 1. After 15 minutes, the
+
+268
+00:08:57,040 --> 00:09:01,199
+orchestrated check-in report showed both
+
+269
+00:08:59,120 --> 00:09:03,200
+teams were ahead of schedule. Phase 1
+
+270
+00:09:01,200 --> 00:09:05,760
+was complete with bonus features added.
+
+271
+00:09:03,200 --> 00:09:07,440
+The 15-minute update confirmed phase 1
+
+272
+00:09:05,760 --> 00:09:09,439
+completion with several components
+
+273
+00:09:07,440 --> 00:09:11,279
+ready. It updated the to-do list and
+
+274
+00:09:09,440 --> 00:09:14,160
+asked permission to proceed with phase
+
+275
+00:09:11,279 --> 00:09:16,160
+2. You could configure the maind file to
+
+276
+00:09:14,160 --> 00:09:18,160
+proceed through all phases automatically
+
+277
+00:09:16,160 --> 00:09:20,319
+without asking. However, I prefer
+
+278
+00:09:18,160 --> 00:09:22,319
+step-by-step progression for review at
+
+279
+00:09:20,320 --> 00:09:24,399
+each checkpoint. Looking at the actual
+
+280
+00:09:22,320 --> 00:09:26,640
+setup, you can see our first agent at
+
+281
+00:09:24,399 --> 00:09:29,040
+the top. Below that is task front end
+
+282
+00:09:26,640 --> 00:09:31,120
+with three windows and task backend also
+
+283
+00:09:29,040 --> 00:09:33,439
+with three windows. Both teams work
+
+284
+00:09:31,120 --> 00:09:35,279
+simultaneously. Each has one window for
+
+285
+00:09:33,440 --> 00:09:37,040
+the project manager, another for the
+
+286
+00:09:35,279 --> 00:09:39,200
+developer, and a third for the server
+
+287
+00:09:37,040 --> 00:09:41,040
+that runs tests and checks for errors.
+
+288
+00:09:39,200 --> 00:09:42,560
+Everything operates in a closed loop.
+
+289
+00:09:41,040 --> 00:09:44,719
+These agents work and develop
+
+290
+00:09:42,560 --> 00:09:46,959
+independently. It's like having multiple
+
+291
+00:09:44,720 --> 00:09:49,040
+engineers working simultaneously, each
+
+292
+00:09:46,959 --> 00:09:51,199
+in their own terminal. This demonstrates
+
+293
+00:09:49,040 --> 00:09:53,199
+the true power that Demox brings to your
+
+294
+00:09:51,200 --> 00:09:54,959
+development workflow. At the bottom, you
+
+295
+00:09:53,200 --> 00:09:57,120
+can see the agent we created at the
+
+296
+00:09:54,959 --> 00:09:58,880
+start, which I named the second agent.
+
+297
+00:09:57,120 --> 00:10:00,640
+To understand the workflow and get all
+
+298
+00:09:58,880 --> 00:10:03,040
+the commands, you can head over to the
+
+299
+00:10:00,640 --> 00:10:04,560
+GitHub repository. However, it can be
+
+300
+00:10:03,040 --> 00:10:06,800
+confusing and I've made several
+
+301
+00:10:04,560 --> 00:10:09,279
+modifications myself. Instead, I
+
+302
+00:10:06,800 --> 00:10:12,319
+recommend using git ingest. Simply take
+
+303
+00:10:09,279 --> 00:10:14,800
+the GitHub URL and replace github.com
+
+304
+00:10:12,320 --> 00:10:17,360
+with gitingest.com. This will summarize
+
+305
+00:10:14,800 --> 00:10:19,359
+the entire repository into AI readable
+
+306
+00:10:17,360 --> 00:10:21,600
+text. Copy that summary and paste it
+
+307
+00:10:19,360 --> 00:10:23,200
+into Claude or chat GPT. From my
+
+308
+00:10:21,600 --> 00:10:25,360
+experience, Claude provides better
+
+309
+00:10:23,200 --> 00:10:27,200
+results for this type of task. Ask it to
+
+310
+00:10:25,360 --> 00:10:29,360
+explain the workflow and installation
+
+311
+00:10:27,200 --> 00:10:31,040
+process step by step, and it will guide
+
+312
+00:10:29,360 --> 00:10:33,120
+you through everything, including all
+
+313
+00:10:31,040 --> 00:10:35,360
+the necessary commands. If the commands
+
+314
+00:10:33,120 --> 00:10:37,120
+don't appear exactly as expected, don't
+
+315
+00:10:35,360 --> 00:10:39,200
+worry. I'll include all of them in the
+
+316
+00:10:37,120 --> 00:10:40,880
+description below for reference. That
+
+317
+00:10:39,200 --> 00:10:42,320
+brings us to the end of this video. If
+
+318
+00:10:40,880 --> 00:10:44,079
+you'd like to support the channel and
+
+319
+00:10:42,320 --> 00:10:46,000
+help us keep making videos like this,
+
+320
+00:10:44,079 --> 00:10:48,000
+you can do so by using the super thanks
+
+321
+00:10:46,000 --> 00:10:49,360
+button below. As always, thank you for
+
+322
+00:10:48,000 --> 00:10:52,320
+watching and I'll see you in the next
+
+323
+00:10:49,360 --> 00:10:52,320
+one.
+

@@ -153,7 +153,7 @@ ls -la ~/Coding/ | grep -i "task"  # for "task templates"
 ```bash
 # Create session with project name (use hyphens for spaces)
 PROJECT_NAME="task-templates"  # or whatever the folder is called
-PROJECT_PATH="/Users/jasonedward/Coding/$PROJECT_NAME"
+PROJECT_PATH="$HOME/Coding/$PROJECT_NAME"
 tmux new-session -d -s $PROJECT_NAME -c "$PROJECT_PATH"
 ```
 
@@ -172,7 +172,7 @@ tmux new-window -t $PROJECT_NAME -n "Dev-Server" -c "$PROJECT_PATH"
 #### 4. Brief the Claude Agent
 ```bash
 # Send briefing message to Claude agent
-tmux send-keys -t $PROJECT_NAME:0 "claude" Enter
+tmux send-keys -t $PROJECT_NAME:0 "claude --dangerously-skip-permissions" Enter
 sleep 5  # Wait for Claude to start
 
 # Send the briefing
@@ -253,15 +253,15 @@ ls -la ~/Coding/ | grep -i task
 # Found: task-templates
 
 # 2. Create session
-tmux new-session -d -s task-templates -c "/Users/jasonedward/Coding/task-templates"
+tmux new-session -d -s task-templates -c "$HOME/Coding/task-templates"
 
 # 3. Set up windows
 tmux rename-window -t task-templates:0 "Claude-Agent"
-tmux new-window -t task-templates -n "Shell" -c "/Users/jasonedward/Coding/task-templates"
-tmux new-window -t task-templates -n "Dev-Server" -c "/Users/jasonedward/Coding/task-templates"
+tmux new-window -t task-templates -n "Shell" -c "$HOME/Coding/task-templates"
+tmux new-window -t task-templates -n "Dev-Server" -c "$HOME/Coding/task-templates"
 
 # 4. Start Claude and brief
-tmux send-keys -t task-templates:0 "claude" Enter
+tmux send-keys -t task-templates:0 "claude --dangerously-skip-permissions" Enter
 # ... (briefing as above)
 ```
 
@@ -296,7 +296,7 @@ tmux new-window -t [session] -n "Project-Manager" -c "$PROJECT_PATH"
 #### 3. Start and Brief the PM
 ```bash
 # Start Claude
-tmux send-keys -t [session]:[PM-window] "claude" Enter
+tmux send-keys -t [session]:[PM-window] "claude --dangerously-skip-permissions" Enter
 sleep 5
 
 # Send PM-specific briefing
@@ -622,20 +622,20 @@ When a command fails:
 #### Using send-claude-message.sh
 ```bash
 # Basic usage - ALWAYS use this instead of manual tmux commands
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh <target> "message"
+./send-claude-message.sh <target> "message"
 
 # Examples:
 # Send to a window
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh agentic-seek:3 "Hello Claude!"
+./send-claude-message.sh agentic-seek:3 "Hello Claude!"
 
 # Send to a specific pane in split-screen
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh tmux-orc:0.1 "Message to pane 1"
+./send-claude-message.sh tmux-orc:0.1 "Message to pane 1"
 
 # Send complex instructions
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh glacier-backend:0 "Please check the database schema for the campaigns table and verify all columns are present"
+./send-claude-message.sh glacier-backend:0 "Please check the database schema for the campaigns table and verify all columns are present"
 
 # Send status update requests
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh ai-chat:2 "STATUS UPDATE: What's your current progress on the authentication implementation?"
+./send-claude-message.sh ai-chat:2 "STATUS UPDATE: What's your current progress on the authentication implementation?"
 ```
 
 #### Why Use the Script?
@@ -657,38 +657,38 @@ When a command fails:
 ##### 1. Starting Claude and Initial Briefing
 ```bash
 # Start Claude first
-tmux send-keys -t project:0 "claude" Enter
+tmux send-keys -t project:0 "claude --dangerously-skip-permissions" Enter
 sleep 5
 
 # Then use the script for the briefing
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh project:0 "You are responsible for the frontend codebase. Please start by analyzing the current project structure and identifying any immediate issues."
+./send-claude-message.sh project:0 "You are responsible for the frontend codebase. Please start by analyzing the current project structure and identifying any immediate issues."
 ```
 
 ##### 2. Cross-Agent Coordination
 ```bash
 # Ask frontend agent about API usage
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh frontend:0 "Which API endpoints are you currently using from the backend?"
+./send-claude-message.sh frontend:0 "Which API endpoints are you currently using from the backend?"
 
 # Share info with backend agent
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh backend:0 "Frontend is using /api/v1/campaigns and /api/v1/flows endpoints"
+./send-claude-message.sh backend:0 "Frontend is using /api/v1/campaigns and /api/v1/flows endpoints"
 ```
 
 ##### 3. Status Checks
 ```bash
 # Quick status request
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:0 "Quick status update please"
+./send-claude-message.sh session:0 "Quick status update please"
 
 # Detailed status request
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:0 "STATUS UPDATE: Please provide: 1) Completed tasks, 2) Current work, 3) Any blockers"
+./send-claude-message.sh session:0 "STATUS UPDATE: Please provide: 1) Completed tasks, 2) Current work, 3) Any blockers"
 ```
 
 ##### 4. Providing Assistance
 ```bash
 # Share error information
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:0 "I see in your server window that port 3000 is already in use. Try port 3001 instead."
+./send-claude-message.sh session:0 "I see in your server window that port 3000 is already in use. Try port 3001 instead."
 
 # Guide stuck agents
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:0 "The error you're seeing is because the virtual environment isn't activated. Run 'source venv/bin/activate' first."
+./send-claude-message.sh session:0 "The error you're seeing is because the virtual environment isn't activated. Run 'source venv/bin/activate' first."
 ```
 
 #### OLD METHOD (DO NOT USE)
@@ -699,14 +699,14 @@ sleep 1
 tmux send-keys -t session:window Enter
 
 # ✅ DO THIS INSTEAD:
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:window "message"
+./send-claude-message.sh session:window "message"
 ```
 
 #### Checking for Responses
 After sending a message, check for the response:
 ```bash
 # Send message
-/Users/jasonedward/Coding/Tmux\ orchestrator/send-claude-message.sh session:0 "What's your status?"
+./send-claude-message.sh session:0 "What's your status?"
 
 # Wait a bit for response
 sleep 5
