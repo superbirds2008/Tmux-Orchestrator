@@ -646,7 +646,7 @@ When a command fails:
 5. **Consistent messaging**: All agents receive messages the same way
 
 #### Script Location and Usage
-- **Location**: `/Users/jasonedward/Coding/Tmux orchestrator/send-claude-message.sh`
+- **Location**: `$HOME/Coding/Tmux Orchestrator/send-claude-message.sh`
 - **Permissions**: Already executable, ready to use
 - **Arguments**: 
   - First: target (session:window or session:window.pane)
